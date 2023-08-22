@@ -1,0 +1,9 @@
+name: Assignment Demo
+run-name: ${{ github.actor }} is doing the Assignnment
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This job was automatically triggered by a ${{github.event_name }} event from local repository onto the main repository."
+      
